@@ -1,5 +1,5 @@
 appConfig:
-  theme: colorful
+  theme: cherry-blossom
   layout: auto
   iconSize: medium
   language: en
@@ -40,7 +40,7 @@ appConfig:
   disableSmartSort: false
   enableErrorReporting: false
 pageInfo:
-  title: Home Dashboard
+  title: Home Services Dashboard
   description: Welcome to 2my.xyz dashboard!
   navLinks:
     - title: Home
@@ -74,17 +74,133 @@ sections:
         description: See how others are using Dashy
         icon: far fa-grin-hearts
         id: 3_1481_showcase
-      - title: Config Guide
-        description: See full list of configuration options
-        icon: fas fa-wrench
-        id: 4_1481_configguide
       - title: Support
         description: Get help with Dashy, raise a bug, or get in contact
         icon: far fa-hands-helping
-        id: 5_1481_support
+        id: 4_1481_support
     displayData:
       sortBy: default
       rows: 1
       cols: 1
       collapsed: false
       hideForGuests: false
+  - name: Security
+    icon: 🛡️
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: AdGuard Home
+        description: AdGuard Home is a network-wide software for blocking ads & tracking
+        icon: https://organisational-cyan-rooster.faviconkit.com/adguard.com/57
+        url: http://router.lan:3333
+        target: newtab
+        id: 0_856_adguardhome
+      - title: Vaultwarden
+        description: Bitwarden compatible server
+        icon: https://organisational-cyan-rooster.faviconkit.com/bitwarden.com/57
+        url: https://pass.2my.xyz
+        id: 1_856_vaultwarden
+  - name: Networking
+    icon: 🛜
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: NanoPi R5S
+        description: NanoPi R5S with OpenWRT
+        icon: https://organisational-cyan-rooster.faviconkit.com/openwrt.org/144
+        url: http://router.lan
+        id: 0_1064_nanopirs
+  - name: Media
+    icon: 🎬
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: Plex
+        description: Plex Server
+        icon: https://organisational-cyan-rooster.faviconkit.com/www.plex.tv/57
+        url: http://nas.lan:32400
+        id: 0_480_plex
+  - name: Tools
+    icon: 🧰
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: Deluge
+        description: >-
+          Deluge is a lightweight, Free Software, cross-platform BitTorrent
+          client.
+        icon: >-
+          https://organisational-cyan-rooster.faviconkit.com/deluge-torrent.org/57
+        url: http://nas.lan:9091/
+        id: 0_529_deluge
+  - name: Servers
+    icon: 📟
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: OpenmediaVault
+        description: openmediavault is the next generation network attached storage (NAS)
+        icon: >-
+          https://organisational-cyan-rooster.faviconkit.com/www.openmediavault.org/57
+        url: http://nas.lan
+        id: 0_746_openmediavault
+  - name: Containers
+    icon: 📦
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: Portainer
+        description: Portainer.io
+        icon: https://organisational-cyan-rooster.faviconkit.com/portainer.io/57
+        id: 0_1046_portainer
+  - name: Workers
+    icon: 🎛️
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: Cloudflare Tunnel
+        description: Cloudflare Tunnel
+        icon: >-
+          https://organisational-cyan-rooster.faviconkit.com/www.cloudflare.com/57
+        id: 0_749_cloudflaretunnel
+  - name: Certificates
+    icon: 🔐
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: Infisical
+        description: 'Infisical - An open-source, end-to-end encrypted secret management '
+        icon: https://organisational-cyan-rooster.faviconkit.com/infisical.com/57
+        id: 0_1238_infisical
