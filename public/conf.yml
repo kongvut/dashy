@@ -21,18 +21,21 @@ appConfig:
   hideComponents:
     hideHeading: false
     hideNav: false
-    hideSearch: false
+    hideSearch: true
     hideSettings: true
     hideFooter: false
   auth:
     enableGuestAccess: false
-    users: []
+    users:
+      - user: kongvut
+        hash: $6$rkIDjJf.xia/KA.p$1jAPNoU5e.jVklAMSgivFjysazUpVv3Ccojd/.riwEXW
+        type: admin
     enableKeycloak: false
   showSplashScreen: false
-  preventWriteToDisk: false
+  preventWriteToDisk: true
   preventLocalSave: false
   disableConfiguration: false
-  disableConfigurationForNonAdmin: false
+  disableConfigurationForNonAdmin: true
   allowConfigEdit: true
   enableServiceWorker: false
   disableContextMenu: false
@@ -41,7 +44,7 @@ appConfig:
   enableErrorReporting: false
   defaultIcon: 📦
 pageInfo:
-  title: Home Services Dashboard
+  title: Services Dashboard
   description: Welcome to 2my.xyz dashboard!
   navLinks:
     - title: Home
@@ -68,16 +71,15 @@ sections:
         id: 1_1481_github
       - title: Docs
         description: Configuring & Usage Documentation
-        icon: far fa-book
-        provider: Dashy.to
+        icon: 📑
         id: 2_1481_docs
       - title: Showcase
-        description: See how others are using Dashy
-        icon: far fa-grin-hearts
+        description: See how others
+        icon: 🎉
         id: 3_1481_showcase
       - title: Support
-        description: Get help with Dashy, raise a bug, or get in contact
-        icon: far fa-hands-helping
+        description: Get help with a bug, or get in contact
+        icon: 🛟
         id: 4_1481_support
     displayData:
       sortBy: default
@@ -116,7 +118,7 @@ sections:
     items:
       - title: NanoPi R5S
         description: NanoPi R5S with OpenWRT
-        icon: hl-openwrt
+        icon: https://above-red-whitefish.faviconkit.com/openwrt.org/144
         url: http://router.lan
         id: 0_1064_nanopirs
   - name: Media
@@ -143,8 +145,7 @@ sections:
       hideForGuests: false
     items:
       - title: Deluge
-        description: >-
-          Deluge is a lightweight, Free Software, cross-platform BitTorrent
+        description: Deluge is a lightweight, Free Software, cross-platform BitTorrent
           client.
         icon: hl-deluge
         url: http://nas.lan:9091/
@@ -187,7 +188,7 @@ sections:
     items:
       - title: Cloudflare Tunnel
         description: Cloudflare Tunnel
-        icon: hl-cloudflare-zero-trust
+        icon: hl-cloudflare
         url: ''
         id: 0_749_cloudflaretunnel
   - name: Certificates
@@ -201,5 +202,5 @@ sections:
     items:
       - title: Infisical
         description: 'Infisical - An open-source, end-to-end encrypted secret management '
-        icon: https://above-red-whitefish.faviconkit.com/infisical.com/57
+        icon: https://above-red-whitefish.faviconkit.com/infisical.com/144
         id: 0_1238_infisica
