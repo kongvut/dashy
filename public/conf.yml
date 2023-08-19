@@ -25,7 +25,7 @@ appConfig:
     hideSettings: true
     hideFooter: false
   auth:
-    enableGuestAccess: false
+    enableGuestAccess: true
     users:
       - user: kongvut
         hash: $6$rkIDjJf.xia/KA.p$1jAPNoU5e.jVklAMSgivFjysazUpVv3Ccojd/.riwEXW
