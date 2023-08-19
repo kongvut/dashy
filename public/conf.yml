@@ -135,12 +135,10 @@ sections:
         icon: hl-plex
         url: http://nas.lan:32400
         id: 0_480_plex
-      - title: Spotify
-        description: Spotify
-        icon: hl-spotify
-        url: https://camo.githubusercontent.com/32ccc1a5c38e9964b8dccce01446ac5ec8561ac3fb90031bb5b273a7ca519e16/68747470733a2f2f73706f746966792d6769746875622d70726f66696c652e76657263656c2e6170702f6170692f766965773f7569643d323175776f61686575697934733565623536777a333473337926636f7665725f696d6167653d66616c7365267468656d653d64656661756c74
-        target: modal
-        id: 1_480_spotify
+    widgets:
+      - type: embed
+        options:
+          html: '<img src="https://spotify-github-profile.vercel.app/api/view?uid=21uwoaheuiy4s5eb56wz34s3y&cover_image=false&theme=default" />'
   - name: Tools
     icon: 🧰
     displayData:
@@ -218,7 +216,7 @@ sections:
       cols: 1
       collapsed: false
       hideForGuests: false
-    items: 
+    widgets:
       - type: code-stats
         options:
           username: kongvut
