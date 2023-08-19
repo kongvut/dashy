@@ -7,7 +7,7 @@ appConfig:
   defaultOpeningMethod: newtab
   statusCheck: false
   statusCheckInterval: 0
-  faviconApi: allesedv
+  faviconApi: faviconkit
   routingMode: history
   enableMultiTasking: false
   widgetsAlwaysUseProxy: false
@@ -16,13 +16,13 @@ appConfig:
     searchEngine: google
     openingMethod: newtab
     searchBangs: {}
-  enableFontAwesome: true
+  enableFontAwesome: false
   enableMaterialDesignIcons: false
   hideComponents:
     hideHeading: false
     hideNav: false
     hideSearch: false
-    hideSettings: false
+    hideSettings: true
     hideFooter: false
   auth:
     enableGuestAccess: false
@@ -39,6 +39,7 @@ appConfig:
   disableUpdateChecks: false
   disableSmartSort: false
   enableErrorReporting: false
+  defaultIcon: 📦
 pageInfo:
   title: Home Services Dashboard
   description: Welcome to 2my.xyz dashboard!
@@ -95,13 +96,13 @@ sections:
     items:
       - title: AdGuard Home
         description: AdGuard Home is a network-wide software for blocking ads & tracking
-        icon: https://organisational-cyan-rooster.faviconkit.com/adguard.com/57
+        icon: hl-adguardhome
         url: http://router.lan:3333
         target: newtab
         id: 0_856_adguardhome
       - title: Vaultwarden
         description: Bitwarden compatible server
-        icon: https://organisational-cyan-rooster.faviconkit.com/bitwarden.com/57
+        icon: hl-vaultwarden-light
         url: https://pass.2my.xyz
         id: 1_856_vaultwarden
   - name: Networking
@@ -115,7 +116,7 @@ sections:
     items:
       - title: NanoPi R5S
         description: NanoPi R5S with OpenWRT
-        icon: https://organisational-cyan-rooster.faviconkit.com/openwrt.org/144
+        icon: hl-openwrt
         url: http://router.lan
         id: 0_1064_nanopirs
   - name: Media
@@ -129,7 +130,7 @@ sections:
     items:
       - title: Plex
         description: Plex Server
-        icon: https://organisational-cyan-rooster.faviconkit.com/www.plex.tv/57
+        icon: hl-plex
         url: http://nas.lan:32400
         id: 0_480_plex
   - name: Tools
@@ -145,8 +146,7 @@ sections:
         description: >-
           Deluge is a lightweight, Free Software, cross-platform BitTorrent
           client.
-        icon: >-
-          https://organisational-cyan-rooster.faviconkit.com/deluge-torrent.org/57
+        icon: hl-deluge
         url: http://nas.lan:9091/
         id: 0_529_deluge
   - name: Servers
@@ -160,8 +160,7 @@ sections:
     items:
       - title: OpenmediaVault
         description: openmediavault is the next generation network attached storage (NAS)
-        icon: >-
-          https://organisational-cyan-rooster.faviconkit.com/www.openmediavault.org/57
+        icon: hl-openmediavault
         url: http://nas.lan
         id: 0_746_openmediavault
   - name: Containers
@@ -175,7 +174,7 @@ sections:
     items:
       - title: Portainer
         description: Portainer.io
-        icon: https://organisational-cyan-rooster.faviconkit.com/portainer.io/57
+        icon: hl-portainer
         id: 0_1046_portainer
   - name: Workers
     icon: 🎛️
@@ -188,8 +187,8 @@ sections:
     items:
       - title: Cloudflare Tunnel
         description: Cloudflare Tunnel
-        icon: >-
-          https://organisational-cyan-rooster.faviconkit.com/www.cloudflare.com/57
+        icon: hl-cloudflare-zero-trust
+        url: ''
         id: 0_749_cloudflaretunnel
   - name: Certificates
     icon: 🔐
@@ -202,5 +201,5 @@ sections:
     items:
       - title: Infisical
         description: 'Infisical - An open-source, end-to-end encrypted secret management '
-        icon: https://organisational-cyan-rooster.faviconkit.com/infisical.com/57
-        id: 0_1238_infisical
+        icon: https://above-red-whitefish.faviconkit.com/infisical.com/57
+        id: 0_1238_infisica
