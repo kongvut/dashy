@@ -28,7 +28,7 @@ appConfig:
     enableGuestAccess: true
     users:
       - user: kongvut
-        hash: $5$LfVwucAhRds/MYw7$a2FWuzlp40SyKQ0lDAZYvZIR0bGbmQwz0RWyhMynS80
+        hash: 315e6ed5e1d2f516b8b1de663224cd9ae7729155c60a7f9860feb8cd1c35643a
         type: admin
     enableKeycloak: false
   showSplashScreen: false
