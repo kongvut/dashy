@@ -84,7 +84,7 @@ sections:
     displayData:
       sortBy: default
       rows: 1
-      cols: 1
+      cols: 2
       collapsed: false
       hideForGuests: false
   - name: Security
@@ -119,8 +119,18 @@ sections:
       - title: NanoPi R5S
         description: NanoPi R5S with OpenWRT
         icon: https://above-red-whitefish.faviconkit.com/openwrt.org/144
-        url: http://router.lan
+        url: http://nanopi.lan
         id: 0_1064_nanopirs
+      - title: Firewall N100
+        description: OpenWRT
+        icon: https://above-red-whitefish.faviconkit.com/openwrt.org/144
+        url: http://router.lan
+        id: 1_1064_firewalln
+      - title: Mikrotik
+        description: Mikrotik
+        icon: https://above-red-whitefish.faviconkit.com/mikrotik.com/144
+        url: http://mikrotik.lan
+        id: 2_1064_mikrotik
   - name: Media
     icon: 🎬
     displayData:
@@ -135,10 +145,21 @@ sections:
         icon: hl-plex
         url: http://nas.lan:32400
         id: 0_480_plex
+      - title: Spotify
+        description: Spotify
+        icon: hl-spotify
+        url: >-
+          https://open.spotify.com/playlist/1VZH8QBNjKDILulhO5WY9S?si=b755a1670ad04166&pt=b174869a0e6ad65207c1bfd4477bc8ed
+        target: modal
+        id: 1_480_spotify
     widgets:
       - type: embed
         options:
-          html: '<img src="https://spotify-github-profile.vercel.app/api/view?uid=21uwoaheuiy4s5eb56wz34s3y&cover_image=false&theme=default" />'
+          html: >-
+            <img
+            src="https://spotify-github-profile.vercel.app/api/view?uid=21uwoaheuiy4s5eb56wz34s3y&cover_image=false&theme=default"
+            />
+        id: 0_480_embed
   - name: Tools
     icon: 🧰
     displayData:
@@ -149,11 +170,22 @@ sections:
       hideForGuests: false
     items:
       - title: Deluge
-        description: Deluge is a lightweight, Free Software, cross-platform BitTorrent
+        description: >-
+          Deluge is a lightweight, Free Software, cross-platform BitTorrent
           client.
         icon: hl-deluge
         url: http://nas.lan:9091/
         id: 0_529_deluge
+      - title: CodeStats
+        description: CodeStats
+        icon: https://above-red-whitefish.faviconkit.com/codestats.net/144
+        url: https://codestats.net/users/kongvut
+        id: 1_529_codestats
+      - title: Disqus
+        description: Disqus
+        icon: https://above-red-whitefish.faviconkit.com/disqus.com/144
+        url: https://disqus.com/home/
+        id: 2_529_disqus
   - name: Servers
     icon: 📟
     displayData:
@@ -208,15 +240,3 @@ sections:
         description: 'Infisical - An open-source, end-to-end encrypted secret management '
         icon: https://above-red-whitefish.faviconkit.com/infisical.com/144
         id: 0_1238_infisical
-  - name: CodeStats
-    icon: 📊
-    displayData:
-      sortBy: default
-      rows: 1
-      cols: 1
-      collapsed: false
-      hideForGuests: false
-    widgets:
-      - type: code-stats
-        options:
-          username: kongvut
