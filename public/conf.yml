@@ -21,14 +21,14 @@ appConfig:
   hideComponents:
     hideHeading: false
     hideNav: false
-    hideSearch: true
+    hideSearch: false
     hideSettings: true
     hideFooter: false
   auth:
     enableGuestAccess: true
     users:
       - user: kongvut
-        hash: $6$rkIDjJf.xia/KA.p$1jAPNoU5e.jVklAMSgivFjysazUpVv3Ccojd/.riwEXW8oAVJgUhikZ3rUpWaACeKH.paw/M4dA9pp15Xo1eF0
+        hash: $5$LfVwucAhRds/MYw7$a2FWuzlp40SyKQ0lDAZYvZIR0bGbmQwz0RWyhMynS80
         type: admin
     enableKeycloak: false
   showSplashScreen: false
