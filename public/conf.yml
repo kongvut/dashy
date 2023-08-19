@@ -135,6 +135,12 @@ sections:
         icon: hl-plex
         url: http://nas.lan:32400
         id: 0_480_plex
+      - title: Spotify
+        description: Spotify
+        icon: hl-spotify
+        url: https://camo.githubusercontent.com/32ccc1a5c38e9964b8dccce01446ac5ec8561ac3fb90031bb5b273a7ca519e16/68747470733a2f2f73706f746966792d6769746875622d70726f66696c652e76657263656c2e6170702f6170692f766965773f7569643d323175776f61686575697934733565623536777a333473337926636f7665725f696d6167653d66616c7365267468656d653d64656661756c74
+        target: modal
+        id: 1_480_spotify
   - name: Tools
     icon: 🧰
     displayData:
@@ -203,4 +209,16 @@ sections:
       - title: Infisical
         description: 'Infisical - An open-source, end-to-end encrypted secret management '
         icon: https://above-red-whitefish.faviconkit.com/infisical.com/144
-        id: 0_1238_infisica
+        id: 0_1238_infisical
+  - name: CodeStats
+    icon: 📊
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items: 
+      - type: code-stats
+        options:
+          username: kongvut
